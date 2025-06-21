@@ -1,0 +1,40 @@
+time-format: 'date-format long long'
+
+messages:
+  ban: |-
+    &4&lNullBorn
+    &6¡ʜᴀs ᴍᴜᴇʀᴛᴏ ᴇʟ ᴀʙɪsᴍᴏ ᴛᴇ ʜᴀ ᴄᴏɴsᴜᴍɪᴅᴏ!
+    &7
+    &7¡ɢʀᴀᴄɪᴀs ᴘᴏʀ ᴊᴜɢᴀʀ!
+  kick: |-
+    &4&lNullBorn
+    &6¡ʜᴀs ᴍᴜᴇʀᴛᴏ ᴇʟ ᴀʙɪsᴍᴏ ᴛᴇ ʜᴀ ᴄᴏɴsᴜᴍɪᴅᴏ!
+    &7
+    &7¡ɢʀᴀᴄɪᴀs ᴘᴏʀ ᴊᴜɢᴀʀ!
+  lives:
+    self: |-
+      &eYou have %lives%/%maxlives% lives remaining.
+      &eYou have been banned %bans% time(s).
+    other: |-
+      &6Player %player%
+      &e%lives%/%maxlives% lives remaining.
+      &eBanned %bans% time(s).
+    invalid-player: '&cInvalid player'
+  revive:
+    invalid-player: '&cInvalid player'
+    max-lives: '&cThat player is at their maximum amount of lives'
+    revived: '&a%player% has been unbanned. You now have %lives% live(s).'
+    transferred: '&aYou have transferred a life to %player%. You now have %lives% lives'
+    confirm: '&eYou will be death banned if you do this! If you are sure, type the command again.'
+    self: '&cYou cannot transfer a life to yourself!'
+revive-confirm: 10
+revive-lives: all
+notify-update: true
+
+database:
+  flush-interval: 30s
+
+default:
+  lives: 1
+  time: 10h
+groups:

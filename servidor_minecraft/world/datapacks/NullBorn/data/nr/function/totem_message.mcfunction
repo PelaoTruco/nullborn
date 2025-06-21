@@ -1,0 +1,2 @@
+execute at @a[scores={Totems=1..}] run tellraw @a ["",{"text":"¡","color":"gold"},{"selector":"@p","bold":true,"color":"gold"},{"text":" \u029c\u1d00 \u0280\u1d07s\u1d1c\u1d04\u026a\u1d1b\u1d00\u1d05\u1d0f \u1d05\u1d07 \u029f\u1d00 \u1d0d\u1d1c\u1d07\u0280\u1d1b\u1d07, \u0262\u0280\u1d00\u1d04\u026a\u1d00s \u1d00\u029f \u1d1b\u1d0f\u1d1b\u1d07\u1d0d \u1d05\u1d07 \u029f\u1d00 \u026a\u0274\u1d0d\u1d0f\u0280\u1d1b\u1d00\u029f\u026a\u1d05\u1d00\u1d05...","color":"yellow"},{"text":"!","color":"gold"}]
+execute at @a[scores={Totems=1..}] run scoreboard players set @a Totems 0

@@ -1,0 +1,19 @@
+Events:
+  event8:
+    type: player_death
+    actions:
+      default:
+      - 'console_command: title @a subtitle {"text":"HHH","obfuscated":true}'
+      - 'console_command: title @a title {"text":"HHH","obfuscated":true,"color":"#B13537"}'
+      - 'console_command: execute at @a run playsound minecraft:ghost master @a ~ ~ ~'
+      - 'console_command: time set night'
+      - 'console_command: effect give @a minecraft:blindness 10 255 true'
+      - 'gamemode spectator %player%'
+      - 'wait: 4'
+      - 'console_command: title @a title {"text":"¡NullBorn!","bold":true,"color":"#B13537"}'
+      - 'console_command: title @a subtitle "%player% ha muerto"'
+      - 'console_command: playsound minecraft:entity.wither.death master @a ~ ~ ~ 100 0.5'
+      - 'console_command: tellraw @a ["",{"text":"Con cada latido perdido, el mundo se volvió más frío. ","color":"#C18081"},{"text":"%player%","bold":true,"color":"dark_red"},{"text":" ha sido arrancado de la existencia, sellado en un destino peor que la ","color":"#C18081"},{"text":"muerte","bold":true,"color":"dark_red"},{"text":". No habrá resurrección, ni gloria, solo el eterno lamento de un alma encadenada en la oscuridad.","color":"#C18081"}]'
+      - 'wait: 5'
+      - 'console_command: tellraw @a ["",{"text":"\u263d","color":"#FFFFCC"},{"text":" ¡\u029f\u1d00 \u0274\u1d0f\u1d04\u029c\u1d07 \u1d04\u1d00\u1d07 \u1d07\u0274 \u1d07\u029f \u029c\u1d0f\u0280\u026a\u1d22\u1d0f\u0274\u1d1b\u1d07!"}]'
+      - 'console_command: execute at @a run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 100 0.5'

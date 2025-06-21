@@ -1,9 +1,412 @@
-[21:26:53] [ServerMain/ERROR]: Failed to start the minecraft server
-joptsimple.UnrecognizedOptionException: installServer is not a recognized option
-	at joptsimple.OptionException.unrecognizedOption(OptionException.java:108) ~[jopt-simple-5.0.4.jar:?]
-	at joptsimple.OptionParser.handleLongOptionToken(OptionParser.java:510) ~[jopt-simple-5.0.4.jar:?]
-	at joptsimple.OptionParserState$2.handleArgument(OptionParserState.java:56) ~[jopt-simple-5.0.4.jar:?]
-	at joptsimple.OptionParser.parse(OptionParser.java:396) ~[jopt-simple-5.0.4.jar:?]
-	at net.minecraft.server.Main.main(SourceFile:91) ~[server-1.21.4.jar:?]
-	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[22:17:25] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04; Ubuntu null) on Linux 6.8.0-1027-azure (amd64)
+[22:17:25] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-231-ver/1.21.4@09e9afd (2025-05-19T17:59:36Z) for Minecraft 1.21.4
+[22:17:26] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[22:17:26] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/SkinsRestorer.jar'...
+[22:17:26] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/MythicMobs-5.9.1.jar'...
+[22:17:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/SkinsRestorer.jar' in 4687ms.
+[22:17:35] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/MythicMobs-5.9.1.jar' in 8873ms.
+[22:17:35] [ServerMain/INFO]: [PluginInitializerManager] Initialized 11 plugins
+[22:17:35] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (11):
+ - ClearLag (3.2.2), ConditionalEvents (4.63.1), DeathBan (1.1.1), LoginSecurity (3.3.0), MythicMobs (5.9.1-${CI_COMMIT_SHORT_SHA}), NoMobLag (2.3.4), PlaceholderAPI (2.11.6), SkinsRestorer (15.6.8), SpigotFixTeamChatPlugin (1.0), TAB (5.2.1), ViaVersion (5.3.2)
+[22:17:42] [ServerMain/WARN]: resource-pack-id missing, using default of 6513bcc9-664d-34a7-9ad6-fcf788338617
+[22:17:42] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:17:45] [ServerMain/INFO]: Loaded 1370 recipes
+[22:17:45] [ServerMain/INFO]: Loaded 1481 advancements
+[22:17:45] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[22:17:46] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 301.5ms
+[22:17:46] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[22:17:46] [Server thread/INFO]: Loading properties
+[22:17:46] [Server thread/INFO]: This server is running Paper version 1.21.4-231-ver/1.21.4@09e9afd (2025-05-19T17:59:36Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[22:17:46] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[22:17:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:17:46] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:17:48] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[22:17:48] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[22:17:48] [Server thread/INFO]: Default game type: SURVIVAL
+[22:17:48] [Server thread/INFO]: Generating keypair
+[22:17:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:17:48] [Server thread/INFO]: Using epoll channel type
+[22:17:48] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[22:17:48] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[22:17:49] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.16.0/adventure-bom-4.16.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/22.0.0/annotations-22.0.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.13.1/adventure-api-4.13.1.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.13.1/adventure-bom-4.13.1.pom
+[22:17:50] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.13.1/adventure-key-4.13.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.0.1/annotations-24.0.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.jar
+[22:17:51] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[22:17:51] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/nullborn/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[22:17:52] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[22:17:52] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.3.2
+[22:17:52] [Server thread/INFO]: [ViaVersion] ViaVersion 5.3.2 is now loaded. Registering protocol transformers and injecting...
+[22:17:53] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[22:17:53] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[22:17:54] [Server thread/INFO]: [LoginSecurity] Loading server plugin LoginSecurity v3.3.0
+[22:17:54] [Server thread/INFO]: [SpigotFixTeamChatPlugin] Loading server plugin SpigotFixTeamChatPlugin v1.0
+[22:17:54] [Server thread/INFO]: [ClearLag] Loading server plugin ClearLag v3.2.2
+[22:17:54] [Server thread/INFO]: [ConditionalEvents] Loading server plugin ConditionalEvents v4.63.1
+[22:17:54] [Server thread/INFO]: [DeathBan] Loading server plugin DeathBan v1.1.1
+[22:17:54] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.1
+[22:17:54] [Server thread/INFO]: [NoMobLag] Loading server plugin NoMobLag v2.3.4
+[22:17:54] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.9.1-${CI_COMMIT_SHORT_SHA}
+[22:17:54] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[22:17:54] [Server thread/INFO]: [MythicMobs] §x§f§f§0§0§0§0M§x§f§f§6§6§0§0y§x§f§f§c§c§0§0t§x§c§b§f§f§0§0h§x§6§5§f§f§0§0i§x§0§0§f§f§0§0c§x§0§0§f§f§6§6 §x§0§0§f§f§c§bE§x§0§0§c§b§f§fn§x§0§0§6§5§f§fa§x§0§0§0§0§f§fb§x§6§6§0§0§f§fl§x§c§c§0§0§f§fe§x§f§f§0§0§c§cd§x§f§f§0§0§6§6!
+[22:17:54] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.6.8
+[22:17:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:17:54] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.6.8
+[22:17:55] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.4.
+[22:17:56] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[22:17:56] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.6.8]
+[22:17:56] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[22:17:56] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:17:56] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:17:56] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:17:56] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:17:56] [Server thread/INFO]: Preparing level "world"
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.6.8
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: a5eb6c3
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[22:17:56] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[22:17:56] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:17:57] [Server thread/INFO]: Preparing spawn area: 0%
+[22:17:57] [Server thread/INFO]: Preparing spawn area: 0%
+[22:17:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:17:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:17:58] [Server thread/INFO]: Time elapsed: 1999 ms
+[22:17:58] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[22:17:58] [Server thread/INFO]: Preparing spawn area: 0%
+[22:17:59] [Server thread/INFO]: Time elapsed: 390 ms
+[22:17:59] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[22:17:59] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[22:17:59] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.3.2
+[22:17:59] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.4 (769)
+[22:17:59] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.3.0
+[22:17:59] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[22:17:59] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "es_es"
+[22:18:00] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[22:18:00] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[22:18:00] [Server thread/INFO]: [LoginSecurity] Using 1.12+ map captcha renderer
+[22:18:00] [Server thread/INFO]: [SpigotFixTeamChatPlugin] Enabling SpigotFixTeamChatPlugin v1.0
+[22:18:00] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[22:18:00] [Server thread/INFO]: [ClearLag] Using version-adapter: LatestVersionAdapter
+[22:18:00] [Server thread/INFO]: [ClearLag] Loading modules...
+[22:18:00] [Server thread/WARN]: [ClearLag] Clearlag failed to use the internal TPS tracker during initialization. Reverted to estimation... (Index 3 out of bounds for length 3)
+[22:18:00] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[22:18:00] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[22:18:00] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[22:18:00] [Server thread/INFO]: [ConditionalEvents] Enabling ConditionalEvents v4.63.1
+[22:18:00] [Thread-10/WARN]: [ClearLag] Clearlag failed to check for updates - bukkit may be down
+[22:18:00] [Thread-10/WARN]: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+[22:18:00] [Thread-10/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.Util.getBukkitVersion(Util.java:105)
+[22:18:00] [Thread-10/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.BukkitUpdater.updateAvailable(BukkitUpdater.java:32)
+[22:18:00] [Thread-10/WARN]: 	at Clearlag.jar//me.minebuilders.clearlag.BukkitUpdater.run(BukkitUpdater.java:82)
+[22:18:00] [Thread-10/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[22:18:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: conditionalevents [4.63.1]
+[22:18:00] [Server thread/INFO]: [ConditionalEvents] Has been enabled! Version: 4.63.1
+[22:18:00] [Server thread/INFO]: [ConditionalEvents] Thanks for using my plugin!   ~Ajneb97
+[22:18:01] [Server thread/INFO]: There is a new version available. (4.64.1)
+[22:18:01] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/conditionalevents
+[22:18:01] [Server thread/INFO]: [DeathBan] Enabling DeathBan v1.1.1
+[22:18:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: deathban [1.1.1]
+[22:18:01] [Server thread/INFO]: [TAB] Enabling TAB v5.2.1
+[22:18:01] [Server thread/INFO]: [TAB] Enabled in 455ms
+[22:18:01] [Server thread/INFO]: [NoMobLag] Enabling NoMobLag v2.3.4
+[22:18:01] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.9.1-${CI_COMMIT_SHORT_SHA}
+[22:18:01] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.4)...
+[22:18:01] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[22:18:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[22:18:05] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[22:18:05] [Server thread/INFO]: [MythicMobs] Base directory /workspaces/nullborn/servidor_minecraft/plugins/MythicMobs/data
+[22:18:05] [Server thread/INFO]: [MythicMobs] Module directory /workspaces/nullborn/servidor_minecraft/plugins/MythicMobs/data/worlds
+[22:18:09] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[22:18:09] [Server thread/INFO]: [MythicMobs] Loading Items...
+[22:18:09] [Server thread/INFO]: [MythicMobs] File ExampleItems.yml not found! Creating a new one...
+[22:18:09] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[22:18:09] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[22:18:09] [Server thread/INFO]: [MythicMobs] File ExampleSkills.yml not found! Creating a new one...
+[22:18:10] [Server thread/INFO]: [MythicMobs] File VanillaMobs.yml not found! Creating a new one...
+[22:18:10] [Server thread/INFO]: [MythicMobs] File ExampleMobs.yml not found! Creating a new one...
+[22:18:10] [Server thread/WARN]: [MythicMobs] Error loading mob 'SkeletalKnight'. Enable debugging for a stack trace.
+[22:18:10] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[22:18:10] [Server thread/INFO]: [MythicMobs] File ExampleDropTables.yml not found! Creating a new one...
+[22:18:10] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[22:18:10] [Server thread/INFO]: [MythicMobs] File ExampleRandomSpawns.yml not found! Creating a new one...
+[22:18:10] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[22:18:10] [Server thread/INFO]: [MythicMobs] Spawners folder not found! Creating...
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 7 mobs.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[22:18:10] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[22:18:10] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[22:18:10] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.9.1 ( build ${CI_COMMIT_SHORT_SHA} ) has been successfully loaded!
+[22:18:11] [Server thread/INFO]: [spark] Starting background profiler...
+[22:18:11] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[22:18:11] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[22:18:11] [Server thread/INFO]: Done preparing level "world" (15.217s)
+[22:18:11] [Server thread/INFO]: Running delayed init tasks
+[22:18:11] [Craft Scheduler Thread - 0 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[22:18:11] [Server thread/INFO]: Done (46.929s)! For help, type "help"
+[22:18:11] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.4.0, you're on: 5.3.2
+[22:18:22] [User Authenticator #0/INFO]: UUID of player SkyVoyager is f04dbe0a-82d2-3d2b-a316-2f90ddcfe13d
+[22:18:26] [Server thread/INFO]: SkyVoyager joined the game
+[22:18:26] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SkyVoyager's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[22:18:26] [Server thread/INFO]: SkyVoyager[/127.173.178.78:38899] logged in with entity id 103 at ([world]-398.7002599238329, 91.0, 124.5533326771517)
+[22:18:58] [Server thread/INFO]: SkyVoyager issued server command: /gamemode spectator
+[22:18:58] [Server thread/INFO]: [SkyVoyager: Set own game mode to Spectator Mode]
+[22:19:03] [Server thread/INFO]: SkyVoyager issued server command: /gamemode survival
+[22:19:03] [Server thread/INFO]: [SkyVoyager: Set own game mode to Survival Mode]
+[22:19:05] [Server thread/INFO]: SkyVoyager has reached the goal [Postmortal]
+[22:19:19] [Server thread/INFO]: SkyVoyager issued server command: /time set day
+[22:19:19] [Server thread/INFO]: [SkyVoyager: Set the time to 1000]
+[22:19:26] [Server thread/INFO]: SkyVoyager issued server command: /advancement revoke @a everything
+[22:19:26] [Server thread/INFO]: [SkyVoyager: Revoked 1481 advancements from SkyVoyager]
+[22:19:31] [Server thread/INFO]: SkyVoyager issued server command: /effect clear
+[22:19:31] [Server thread/INFO]: [SkyVoyager: Removed every effect from SkyVoyager]
+[22:19:50] [Server thread/INFO]: SkyVoyager issued server command: /effect give SkyVoyager minecraft:saturation 10 255 true
+[22:19:50] [Server thread/INFO]: [SkyVoyager: Applied effect Saturation to SkyVoyager]
+[22:19:54] [Server thread/INFO]: SkyVoyager issued server command: /gamemode creative
+[22:19:54] [Server thread/INFO]: [SkyVoyager: Set own game mode to Creative Mode]
+[22:20:22] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Alka_K0tH
+[22:20:22] [Server thread/INFO]: [SkyVoyager: Added Alka_K0tH to the whitelist]
+[22:20:29] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Prisco_Pelao
+[22:20:29] [Server thread/INFO]: [SkyVoyager: Added Prisco_Pelao to the whitelist]
+[22:20:36] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add xxx_ruisu_xxx
+[22:20:36] [Server thread/INFO]: [SkyVoyager: Added xxx_ruisu_xxx to the whitelist]
+[22:20:42] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add RoseFelll
+[22:20:42] [Server thread/INFO]: [SkyVoyager: Added RoseFelll to the whitelist]
+[22:20:47] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add MaurXxp
+[22:20:47] [Server thread/INFO]: [SkyVoyager: Added MaurXxp to the whitelist]
+[22:20:53] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Dibran360
+[22:20:54] [Server thread/INFO]: [SkyVoyager: Added Dibran360 to the whitelist]
+[22:20:59] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add gambotostas
+[22:20:59] [Server thread/INFO]: [SkyVoyager: Added gambotostas to the whitelist]
+[22:21:07] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Emabuey
+[22:21:07] [Server thread/INFO]: [SkyVoyager: Added Emabuey to the whitelist]
+[22:21:11] [Server thread/INFO]: SkyVoyager issued server command: /gamerule doWeatherCycle false
+[22:21:11] [Server thread/INFO]: [SkyVoyager: Gamerule doWeatherCycle is now set to: false]
+[22:21:16] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Poquin_
+[22:21:16] [Server thread/INFO]: [SkyVoyager: Added Poquin_ to the whitelist]
+[22:21:23] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Poquin_
+[22:21:28] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add alvarecoke
+[22:21:28] [Server thread/INFO]: [SkyVoyager: Added alvarecoke to the whitelist]
+[22:21:34] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Aitoreto
+[22:21:34] [Server thread/INFO]: [SkyVoyager: Added Aitoreto to the whitelist]
+[22:21:40] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add MrTxbal
+[22:21:40] [Server thread/INFO]: [SkyVoyager: Added MrTxbal to the whitelist]
+[22:21:45] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Patertactico
+[22:21:45] [Server thread/INFO]: [SkyVoyager: Added Patertactico to the whitelist]
+[22:21:55] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add DiegoMochu
+[22:21:55] [Server thread/INFO]: [SkyVoyager: Added DiegoMochu to the whitelist]
+[22:22:00] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add ZenVyper
+[22:22:00] [Server thread/INFO]: [SkyVoyager: Added ZenVyper to the whitelist]
+[22:22:07] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Mage — 13:50_MageX
+[22:22:17] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add _MageX_
+[22:22:17] [Server thread/INFO]: [SkyVoyager: Added _MageX_ to the whitelist]
+[22:22:19] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add _MageX
+[22:22:19] [Server thread/INFO]: [SkyVoyager: Added _MageX to the whitelist]
+[22:22:28] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add XxferchosxX
+[22:22:28] [Server thread/INFO]: [SkyVoyager: Added XxferchosxX to the whitelist]
+[22:22:45] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add NexGod17
+[22:22:45] [Server thread/INFO]: [SkyVoyager: Added NexGod17 to the whitelist]
+[22:22:52] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add IloveTitans
+[22:22:52] [Server thread/INFO]: [SkyVoyager: Added IloveTitans to the whitelist]
+[22:23:00] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Ribux008
+[22:23:00] [Server thread/INFO]: [SkyVoyager: Added Ribux008 to the whitelist]
+[22:23:06] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add shkzu5
+[22:23:06] [Server thread/INFO]: [SkyVoyager: Added shkzu5 to the whitelist]
+[22:23:16] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add momasospetrico
+[22:23:16] [Server thread/INFO]: [SkyVoyager: Added momasospetrico to the whitelist]
+[22:23:19] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add Porler23
+[22:23:19] [Server thread/INFO]: [SkyVoyager: Added Porler23 to the whitelist]
+[22:23:27] [Server thread/INFO]: SkyVoyager issued server command: /whitelist add wiwiboy22
+[22:23:27] [Server thread/INFO]: [SkyVoyager: Added wiwiboy22 to the whitelist]
+[22:24:00] [Server thread/INFO]: SkyVoyager issued server command: /mythicmobs reload
+[22:24:00] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Items...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[22:24:00] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[22:24:00] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic summon
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Skill: SummonSkeletons | File: /workspaces/nullborn/servidor_minecraft/plugins/MythicMobs/skills/ExampleSkills.yml
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Error Message: The 'type' attribute must be a valid MythicMob or MythicEntity type.
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: summon{mob=SkeletalMinion;amount=2;noise=5}
+[22:24:00] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic summon
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Skill: SummonSkeletons | File: /workspaces/nullborn/servidor_minecraft/plugins/MythicMobs/skills/ExampleSkills.yml
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Error Message: The 'type' attribute must be a valid MythicMob or MythicEntity type.
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: summon{mob=SkeletalMinion;amount=2;noise=5}
+[22:24:00] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Mechanic summon
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Skill: SummonSkeletons | File: /workspaces/nullborn/servidor_minecraft/plugins/MythicMobs/skills/ExampleSkills.yml
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Error Message: The 'type' attribute must be a valid MythicMob or MythicEntity type.
+[22:24:00] [Server thread/WARN]: [MythicMobs] --| Mechanic Line: summon{mob=SkeletalMinion;amount=2;noise=5}
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mobs.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[22:24:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[22:24:00] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[22:24:35] [Server thread/INFO]: SkyVoyager issued server command: /tab reload
+[22:24:35] [Server thread/INFO]: [TAB] Disabled in 1ms
+[22:24:35] [Server thread/INFO]: [TAB] [WARN] Player SkyVoyager's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[22:24:35] [Server thread/INFO]: [TAB] Enabled in 44ms
+[22:24:55] [Server thread/INFO]: SkyVoyager issued server command: /tab reload
+[22:24:55] [Server thread/INFO]: [TAB] Disabled in 1ms
+[22:24:55] [Server thread/INFO]: [TAB] [WARN] Player SkyVoyager's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[22:24:55] [Server thread/INFO]: [TAB] Enabled in 34ms
+[22:25:44] [Server thread/INFO]: SkyVoyager issued server command: /team add Creador ["",{"text":"CREADOR","bold":true,"color":"#ff6600"},{"text":" ","color":"white"}]
+[22:25:44] [Server thread/INFO]: [SkyVoyager: Created team [CREADOR ]]
+[22:25:47] [Server thread/INFO]: SkyVoyager issued server command: /team modify Creador prefix ["",{"text":"CREADOR","bold":true,"color":"#ff6600"},{"text":" ","color":"white"}]
+[22:25:50] [Server thread/INFO]: SkyVoyager issued server command: /team join Creador
+[22:25:50] [Server thread/INFO]: [SkyVoyager: Added CREADOR SkyVoyager to team [CREADOR ]]
+[22:25:54] [Async Chat Thread - #1/INFO]: [Not Secure] <CREADOR SkyVoyager> hola
+[22:26:05] [Server thread/INFO]: SkyVoyager issued server command: /papi ecloud download Teams
+[22:26:05] [placeholderapi-io-#1/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[22:26:11] [Server thread/INFO]: SkyVoyager issued server command: /papi reload
+[22:26:11] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[22:26:11] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[22:26:11] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: team [1.2]
+[22:26:47] [Server thread/INFO]: SkyVoyager issued server command: /team add Miembro ["",{"text":"MIEMBRO","color":"#00ff00","bold":true},{"text":" ","color":"white"}]
+[22:26:47] [Server thread/INFO]: [CREADOR SkyVoyager: Created team [MIEMBRO ]]
+[22:26:51] [Server thread/INFO]: SkyVoyager issued server command: /team modify Miembro prefix ["",{"text":"MIEMBRO","color":"#00ff00","bold":true},{"text":" ","color":"white"}]
+[22:27:32] [Server thread/INFO]: SkyVoyager lost connection: Disconnected
+[22:27:32] [Server thread/INFO]: CREADOR SkyVoyager left the game
+[22:28:13] [User Authenticator #1/INFO]: UUID of player SkyVoyager is f04dbe0a-82d2-3d2b-a316-2f90ddcfe13d
+[22:28:17] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SkyVoyager's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[22:28:17] [Server thread/INFO]: CREADOR SkyVoyager joined the game
+[22:28:17] [Server thread/INFO]: SkyVoyager[/127.173.178.78:43225] logged in with entity id 654 at ([world]-384.17770701642525, 90.0, 157.0728078686276)
+[22:29:00] [Server thread/INFO]: SkyVoyager issued server command: /time set day
+[22:29:00] [Server thread/INFO]: [CREADOR SkyVoyager: Set the time to 1000]
+[22:29:05] [Server thread/INFO]: SkyVoyager issued server command: /conditionalevents reload
+[22:30:01] [Server thread/INFO]: Stopping the server
+[22:30:01] [Server thread/INFO]: Stopping server
+[22:30:01] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.8
+[22:30:01] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.9.1-${CI_COMMIT_SHORT_SHA}
+[22:30:01] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[22:30:01] [Server thread/INFO]: [MythicMobs] - 
+[22:30:01] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
+[22:30:01] [Server thread/INFO]: [MythicMobs] - 
+[22:30:01] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[22:30:01] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
+[22:30:01] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
+[22:30:01] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[22:30:01] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[22:30:01] [Server thread/INFO]: [MythicMobs] - Variables saved...
+[22:30:01] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
+[22:30:01] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
+[22:30:01] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[22:30:01] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[22:30:01] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[22:30:01] [Server thread/INFO]: [NoMobLag] Disabling NoMobLag v2.3.4
+[22:30:01] [Server thread/INFO]: [TAB] Disabling TAB v5.2.1
+[22:30:01] [Server thread/INFO]: [TAB] Disabled in 1ms
+[22:30:01] [Server thread/INFO]: [DeathBan] Disabling DeathBan v1.1.1
+[22:30:01] [Server thread/INFO]: [ConditionalEvents] Disabling ConditionalEvents v4.63.1
+[22:30:01] [Server thread/INFO]: [ConditionalEvents] Has been disabled! Version: 4.63.1
+[22:30:01] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.2.2
+[22:30:01] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[22:30:01] [Server thread/INFO]: [SpigotFixTeamChatPlugin] Disabling SpigotFixTeamChatPlugin v1.0
+[22:30:01] [Server thread/INFO]: [LoginSecurity] Disabling LoginSecurity v3.3.0
+[22:30:01] [Server thread/INFO]: [LoginSecurity] Waiting for queued tasks...
+[22:30:01] [Server thread/INFO]: [LoginSecurity] ExecutorService shut down, ready to disable.
+[22:30:01] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[22:30:01] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[22:30:01] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[22:30:01] [Server thread/INFO]: Saving players
+[22:30:01] [Server thread/INFO]: SkyVoyager lost connection: Server closed
+[22:30:01] [Server thread/INFO]: SkyVoyager left the game
+[22:30:01] [Server thread/INFO]: Saving worlds
+[22:30:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Saved 448 block chunks, 76 entity chunks, 2 poi chunks in world 'world' in 0.47s
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[22:30:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[22:30:01] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[22:30:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:30:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:30:01] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:30:01] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[22:30:01] [Server thread/INFO]: All I/O tasks to complete
+[22:30:01] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[22:30:01] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
